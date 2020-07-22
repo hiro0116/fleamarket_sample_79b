@@ -1,2 +1,29 @@
 .Header
 .Main
+  .l-side
+    .l-side__lists
+      %ul
+        %li
+          あああ
+
+  .l-content
+    .mypage-tab-container
+    %h2.mypage-tab-head
+      購入した商品
+    %ul.mypage-tabs
+      %li
+        %h3
+          %a{href: "/jp/mypage/purchase/"}
+            取引中
+      %li
+        %h3
+          %a{href: "/jp/mypage/purchased/"}
+            過去の取引
+    .tab-content
+      %ul#mypage-tab-transaction-now.mypage-item-list.tab-pane
+        %li.mypage-item-not-found.bold
+          取引中の商品がありません
+
+      %ul#mypage-tab-transaction-old.mypage-item-list.tab-pane.active
+        %li.mypage-item-not-found.bold
+          過去に取引した商品がありません

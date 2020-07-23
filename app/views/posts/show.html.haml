@@ -1,0 +1,34 @@
+.Main
+  .Main__header
+    = image_tag "/assets/logo-d3d78326971d78b06e3d6f0ba666d025a8ad681286b4d9e00e7dbe8673bcfd23.svg"
+  .Main__contents
+    .content
+      .content__header
+        %h2
+          購入内容の確認
+      .content__item.space
+        .item__image
+          .item__image__photo
+            = image_tag "https://static.mercdn.net/item/detail/orig/photos/m61289110073_1.jpg?1594477233", size: "100x100", alt: "image"
+          .item__image__info
+            %p.name (ナンバー指定可)SUPREME 歴代トランプ2枚 ステッカーがわりに
+            %p.price
+              %span 税込み
+              %span.font ¥900000000
+      .content__fee.space
+        %span.font 支払い金額
+        %span.font ¥900000000
+      .content__credit.space
+        %h3 支払い方法
+        = link_to "#", class: "user-info" do
+          =icon('far', 'plus-square')
+          %span カードを登録してください
+      .content__address.space
+        %h3 配送先
+        = link_to "#", class: "user-info" do
+          =icon('far', 'plus-square')
+          %span 住所を登録してください
+      .content__button.space
+        %button.confirm-btn 購入する
+  .Main__info
+    = image_tag "/Users/hrnh.0116/最終課題/fleamarket_sample_79b/app/assets/images/logo/logo-white.png"

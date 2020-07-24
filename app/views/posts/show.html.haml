@@ -1,6 +1,6 @@
 .Main
   .Main__header
-    = image_tag "/Users/hrnh.0116/最終課題/fleamarket_sample_79b/app/assets/images/logo/logo.png"
+    = image_tag "logo.png", class: "logo"
   .Main__contents
     .content
       .content__header
@@ -9,11 +9,11 @@
       .content__item.space
         .item__image
           .item__image__photo
-            = image_tag "https://static.mercdn.net/item/detail/orig/photos/m61289110073_1.jpg?1594477233", size: "100x100", alt: "image"
+            = image_tag "", size: "100x100", alt: "NO image"
           .item__image__info
-            %p.name (ナンバー指定可)SUPREME 歴代トランプ2枚 ステッカーがわりに
+            %p.name aaaaaaaaaaaaaaaaaaa
             %p.price
-              %span 税込み
+              %span 送料込み(税込)
               %span.font ¥900000000
       .content__fee.space
         %span.font 支払い金額
@@ -31,4 +31,13 @@
       .content__button.space
         %button.confirm-btn 購入する
   .Main__info
-    = image_tag "/Users/hrnh.0116/最終課題/fleamarket_sample_79b/app/assets/images/logo/logo-white.png"
+    %ul.footer-info
+      %li
+        = link_to "プライバシーポリシー", "#", class: "info"
+      %li
+        = link_to "FURIMA利用規約", "#", class: "info"
+      %li
+        = link_to "特定商取引に関する表記", "#", class: "info"
+    .footer-logo
+      = image_tag "logo-white.png", class: "logo"
+      %p ©︎FURIMA

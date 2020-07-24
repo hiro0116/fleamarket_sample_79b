@@ -23,7 +23,7 @@
 |birth_date_year|string|null: false|
 |birth_date_month|string|null: false|
 |birth_date_day|string|null: false|
-|user_id|string|null: false|
+|user_id|string|null: false, foreign_key: true|
 ### association
 - belongs_to :user
 
@@ -40,10 +40,10 @@
 |house_number|string|null: false|
 |building_name|string|null: false|
 |phone_number|sgring|unique: true|
-|user_id|references|foreign_key: true|
+|user_id|references|foreign_key: true, null: true|
 ### association
 - belongs_to :user
-- belongs_to :address
+- belongs_to_active_hash :seller_region
 
 ## credit_cardsテーブル
 |Column|Type|Options|
@@ -85,7 +85,7 @@
 ## imagesテーブル
 |Column|Type|Options|
 |------|----|-------|
-|image_id|references|foreign_key :true, null: false|
+|item_id|references|foreign_key :true, null: false|
 |image_url|string|null: false|
 ### association
 - belogs_to :item

@@ -101,39 +101,9 @@
 ## brandsテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string||
+|name|string|null: false|
 ### association
 - has_many :items
-
-## item_conditionsテーブル(active_hash)
-|Column|Type|Options|
-|------|----|-------|
-|condition|string|null: false|
-### association
-
-## delivery_cost_payersテーブル(active_hash)
-|Column|Type|Options|
-|------|----|-------|
-|payer|string|null: false|
-### association
-
-## seller_regionsテーブル(active_hash)
-|Column|Type|Options|
-|------|----|-------|
-|prefecture|string|null: false|
-### association
-
-## preparation_for_deliveryテーブル(active_hash)
-|Column|Type|Options|
-|------|----|-------|
-|day|string|null: false|
-### association
-
-## statusesテーブル(active_hash)
-|Column|Type|Options|
-|------|----|-------|
-|status|string|null: false|
-### association
 
 # README
 

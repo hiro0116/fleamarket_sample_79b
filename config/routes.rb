@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   # root to: 'items#create'
   resources :items, only: [:create]
   root to: 'posts#index'
+
 end

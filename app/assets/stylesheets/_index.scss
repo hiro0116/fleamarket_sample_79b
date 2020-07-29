@@ -40,9 +40,12 @@
         align-items: center;
         flex-direction: column;
         text-align: center;
-        background-color: red;
+        background-color: #fafafa;
         .user-icon {
           font-size: 50px;
+          .icon {
+            color: #dddddd;
+          }
         }
         .user-name {
           font-size: 15px;

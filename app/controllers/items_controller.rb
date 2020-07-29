@@ -3,7 +3,7 @@ class ItemsController < ApplicationController
   end
 
   def destroy
-    items = Item.find(params[:id])
+    item = Item.find(params[:id])
     item.destroy
   end
 
